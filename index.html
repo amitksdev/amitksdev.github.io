@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FullyAutomatix | Hobby Electronics</title>
+    <meta
+      name="description"
+      content="FullyAutomatix is a hobby electronics and 3D printing playground with projects, tutorials, and build logs for makers."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="logo" href="#top" aria-label="FullyAutomatix home">
+        <span class="logo-mark">FA</span>
+        <span class="logo-text">FullyAutomatix</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#fabrication">3D + Automation</a>
+        <a href="#kits">Starter Kits</a>
+        <a href="#logs">Build Logs</a>
+        <a href="#join">Join</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero reveal">
+        <p class="kicker">Hobby Electronics Lab</p>
+        <h1>
+          Build wild circuits.<br />
+          Learn by soldering.
+        </h1>
+        <p class="hero-copy">
+          FullyAutomatix is a maker site dedicated to practical electronics projects,
+          microcontroller experiments, and 3D-printed enclosures for complete home
+          automation systems and custom gadget builds.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Explore Projects</a>
+          <a class="btn btn-ghost" href="#join">Get Weekly Builds</a>
+        </div>
+
+        <div class="signal-strip" aria-label="Activity lights">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <div class="section-head">
+          <p class="kicker">Featured Projects</p>
+          <h2>Builds You Can Finish This Weekend</h2>
+        </div>
+        <div class="card-grid">
+          <article class="project-card">
+            <h3>Auto Plant Guardian</h3>
+            <p>
+              Soil sensor + pump relay controller with moisture threshold tuning, LED status feedback,
+              and a 3D-printed weather-safe shell.
+            </p>
+            <p class="meta">ESP32 • Sensors • Relays • 3D Printed Case</p>
+          </article>
+          <article class="project-card">
+            <h3>Desk Signal Tower</h3>
+            <p>
+              Three-color productivity indicator built on a tiny PCB with USB-C power,
+              tactile controls, and a snap-fit printed tower body.
+            </p>
+            <p class="meta">ATtiny • PCB • USB-C • Printed Chassis</p>
+          </article>
+          <article class="project-card">
+            <h3>Retro VU Meter</h3>
+            <p>
+              Stereo audio visualizer with animated bar graph and adjustable gain for line-in devices.
+            </p>
+            <p class="meta">Op-amp • LEDs • Analog</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="kits" class="section split reveal">
+        <div>
+          <p class="kicker">Starter Kits</p>
+          <h2>Everything You Need to Start Tinkering</h2>
+          <p>
+            Curated bundles for beginners and intermediate makers. Every kit includes a guided build map,
+            troubleshooting tips, printable wiring diagrams, and STL files for modular housings.
+          </p>
+        </div>
+        <ul class="kit-list" aria-label="Starter kit options">
+          <li><strong>Ignition Kit:</strong> Breadboard, resistors, LEDs, push buttons, and power module.</li>
+          <li><strong>Motion Kit:</strong> Servo, ultrasonic sensor, MOSFETs, control examples, and printable brackets.</li>
+          <li><strong>Display Kit:</strong> OLED panel, rotary encoder, custom menu firmware, and a printable front panel.</li>
+        </ul>
+      </section>
+
+      <section id="fabrication" class="section reveal">
+        <div class="section-head">
+          <p class="kicker">3D Printing + Electronics</p>
+          <h2>Complete Home Automation and Gadget Builds</h2>
+        </div>
+        <div class="card-grid">
+          <article class="project-card">
+            <h3>Smart Room Node Stack</h3>
+            <p>
+              Combine temperature, motion, and air-quality sensors with an ESP32 board in a multi-part
+              3D-printed wall mount for a clean home automation install.
+            </p>
+            <p class="meta">Home Assistant • ESP32 • Multi-Part Print</p>
+          </article>
+          <article class="project-card">
+            <h3>Modular Gadget Enclosures</h3>
+            <p>
+              Reusable enclosure templates with screw posts, cable channels, and vent patterns sized for
+              common hobby PCBs so each gadget build looks production-ready.
+            </p>
+            <p class="meta">Fusion/FreeCAD • STL • PCB Fit Guides</p>
+          </article>
+          <article class="project-card">
+            <h3>Automation Dock Ecosystem</h3>
+            <p>
+              Build a printed dock system for smart switches, relay controllers, and sensor hubs so you can
+              scale from one room to a full-house automation setup.
+            </p>
+            <p class="meta">Relays • Power Rails • Quick-Swap Modules</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="logs" class="section reveal">
+        <div class="section-head">
+          <p class="kicker">Build Logs</p>
+          <h2>Recent Bench Notes</h2>
+        </div>
+        <div class="timeline" role="list">
+          <article role="listitem" class="log-item">
+            <p class="date">07 Jul 2026</p>
+            <h3>Battery Safety Pass</h3>
+            <p>Added thermal checks, fuse guard, and a flame-resistant 3D printed cage for the mobile power module prototype.</p>
+          </article>
+          <article role="listitem" class="log-item">
+            <p class="date">02 Jul 2026</p>
+            <h3>Noise Hunt Session</h3>
+            <p>Reduced analog noise floor by separating digital and analog grounds on rev C board.</p>
+          </article>
+          <article role="listitem" class="log-item">
+            <p class="date">25 Jun 2026</p>
+            <h3>Firmware Milestone</h3>
+            <p>Shipped non-blocking scheduler update for sensor polling and display refresh loops.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="join" class="section join reveal">
+        <div>
+          <p class="kicker">Join FullyAutomatix</p>
+          <h2>Get a Weekly Project Drop</h2>
+          <p>
+            Receive one practical circuit build every week with parts list, schematic, and source code links.
+          </p>
+        </div>
+        <form class="join-form" action="#" method="post" onsubmit="return false;">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="maker@example.com" required />
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+          <p class="form-note" id="form-note" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>FullyAutomatix</p>
+      <p><span id="year"></span> • Hobby Electronics Community</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
