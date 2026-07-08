@@ -29,8 +29,7 @@
         <a href="#projects">Projects</a>
         <a href="#fabrication">3D + Automation</a>
         <a href="#kits">Starter Kits</a>
-        <a href="#logs">Build Logs</a>
-        <a href="#join">Join</a>
+        <a href="#sourcing">Sourcing</a>
       </nav>
     </header>
 
@@ -137,44 +136,37 @@
         </div>
       </section>
 
-      <section id="logs" class="section reveal">
-        <div class="section-head">
-          <p class="kicker">Build Logs</p>
-          <h2>Recent Bench Notes</h2>
-        </div>
-        <div class="timeline" role="list">
-          <article role="listitem" class="log-item">
-            <p class="date">07 Jul 2026</p>
-            <h3>Battery Safety Pass</h3>
-            <p>Added thermal checks, fuse guard, and a flame-resistant 3D printed cage for the mobile power module prototype.</p>
-          </article>
-          <article role="listitem" class="log-item">
-            <p class="date">02 Jul 2026</p>
-            <h3>Noise Hunt Session</h3>
-            <p>Reduced analog noise floor by separating digital and analog grounds on rev C board.</p>
-          </article>
-          <article role="listitem" class="log-item">
-            <p class="date">25 Jun 2026</p>
-            <h3>Firmware Milestone</h3>
-            <p>Shipped non-blocking scheduler update for sensor polling and display refresh loops.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="join" class="section join reveal">
+      <section id="sourcing" class="section join reveal">
         <div>
-          <p class="kicker">Join FullyAutomatix</p>
-          <h2>Get a Weekly Project Drop</h2>
+          <p class="kicker">Component Sourcing</p>
+          <h2>Where to Buy Electronics Parts</h2>
           <p>
-            Receive one practical circuit build every week with parts list, schematic, and source code links.
+            Use this section to keep your go-to vendors for sensors, passives, modules, connectors,
+            and prototyping hardware. These links are easy to swap with your preferred sources.
           </p>
         </div>
-        <form class="join-form" action="#" method="post" onsubmit="return false;">
-          <label for="email">Email address</label>
-          <input id="email" name="email" type="email" placeholder="maker@example.com" required />
-          <button class="btn btn-primary" type="submit">Subscribe</button>
-          <p class="form-note" id="form-note" aria-live="polite"></p>
-        </form>
+        <ul class="kit-list" aria-label="Top electronics component vendors">
+          <li>
+            <strong><a href="https://www.digikey.com" target="_blank" rel="noopener noreferrer">DigiKey</a>:</strong>
+            Excellent stock depth, fast shipping, and strong parametric search for exact components.
+          </li>
+          <li>
+            <strong><a href="https://www.mouser.com" target="_blank" rel="noopener noreferrer">Mouser</a>:</strong>
+            Great for broad manufacturer coverage, datasheet access, and engineering-grade parts.
+          </li>
+          <li>
+            <strong><a href="https://www.lcsc.com" target="_blank" rel="noopener noreferrer">LCSC</a>:</strong>
+            Very cost-effective for hobby and small-batch builds with wide module and component variety.
+          </li>
+          <li>
+            <strong><a href="https://www.adafruit.com" target="_blank" rel="noopener noreferrer">Adafruit</a>:</strong>
+            Best for beginner-friendly breakout boards, clear documentation, and reliable tutorials.
+          </li>
+          <li>
+            <strong><a href="https://www.sparkfun.com" target="_blank" rel="noopener noreferrer">SparkFun</a>:</strong>
+            Strong prototyping ecosystem with useful dev boards, shields, and educational resources.
+          </li>
+        </ul>
       </section>
     </main>
 
