@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="t d">
+  <title id="t">Electronic Load Tester mock image</title>
+  <desc id="d">Synthetic illustration of an electronic load tester with MOSFET and OLED display</desc>
+  <rect width="1200" height="620" fill="#111a17"/>
+  <rect x="120" y="70" width="960" height="480" rx="24" fill="#1d2a26" stroke="#46685a" stroke-width="4"/>
+  <rect x="180" y="130" width="400" height="280" rx="16" fill="#0f1512" stroke="#3f5a4c" stroke-width="4"/>
+  <rect x="220" y="170" width="320" height="80" rx="8" fill="#1a2822" stroke="#00c2a8" stroke-width="2"/>
+  <text x="240" y="220" fill="#f9c80e" font-size="36" font-family="IBM Plex Mono, monospace">12.3V 2.5A</text>
+  <rect x="220" y="270" width="150" height="120" rx="8" fill="#2b3e36" stroke="#f9c80e" stroke-width="3"/>
+  <text x="245" y="340" fill="#f6f8f7" font-size="28" font-family="monospace">MOSFET</text>
+  <rect x="390" y="270" width="150" height="120" rx="8" fill="#2b3e36" stroke="#f9c80e" stroke-width="3"/>
+  <text x="420" y="340" fill="#f6f8f7" font-size="28" font-family="monospace">OP-AMP</text>
+  <circle cx="720" cy="280" r="140" fill="#2b3e36" stroke="#ff6f59" stroke-width="6"/>
+  <path d="M650 280 L680 310 L750 240 L790 280" stroke="#00c2a8" stroke-width="8" fill="none"/>
+  <text x="180" y="530" fill="#f6f8f7" font-size="42" font-family="IBM Plex Mono, monospace">ELECTRONIC LOAD TESTER</text>
+</svg>

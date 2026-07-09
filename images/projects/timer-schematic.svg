@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="t d">
+  <title id="t">Auto-Off Timer Schematic</title>
+  <desc id="d">Block schematic showing mains, cap dropper, C005 and relay</desc>
+  <rect width="1200" height="620" fill="#111a17"/>
+  <rect x="120" y="70" width="960" height="480" rx="24" fill="#1d2a26" stroke="#46685a" stroke-width="4"/>
+  <rect x="180" y="230" width="160" height="120" rx="12" fill="#2b3e36" stroke="#ff6f59" stroke-width="3"/>
+  <text x="205" y="300" fill="#f6f8f7" font-size="26" font-family="monospace">230V AC</text>
+  <rect x="420" y="230" width="180" height="120" rx="12" fill="#2b3e36" stroke="#f9c80e" stroke-width="3"/>
+  <text x="450" y="290" fill="#f6f8f7" font-size="22" font-family="monospace">CAP</text>
+  <text x="440" y="320" fill="#f6f8f7" font-size="22" font-family="monospace">DROPPER</text>
+  <rect x="680" y="230" width="160" height="120" rx="12" fill="#2b3e36" stroke="#00c2a8" stroke-width="3"/>
+  <text x="720" y="300" fill="#f6f8f7" font-size="26" font-family="monospace">C005</text>
+  <rect x="920" y="230" width="140" height="120" rx="12" fill="#2b3e36" stroke="#ff6f59" stroke-width="3"/>
+  <text x="950" y="300" fill="#f6f8f7" font-size="26" font-family="monospace">RELAY</text>
+  <path d="M340 290 L420 290" stroke="#f9c80e" stroke-width="4"/>
+  <path d="M600 290 L680 290" stroke="#00c2a8" stroke-width="4"/>
+  <path d="M840 290 L920 290" stroke="#ff6f59" stroke-width="4"/>
+  <text x="280" y="530" fill="#f6f8f7" font-size="40" font-family="IBM Plex Mono, monospace">TIMER SCHEMATIC</text>
+</svg>

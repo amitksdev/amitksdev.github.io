@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="t d">
+  <title id="t">12V UPS Schematic</title>
+  <desc id="d">Block diagram showing UPS charge path, BMS and relay switchover</desc>
+  <rect width="1200" height="620" fill="#111a17"/>
+  <rect x="120" y="70" width="960" height="480" rx="24" fill="#1d2a26" stroke="#46685a" stroke-width="4"/>
+  <rect x="200" y="250" width="180" height="100" rx="12" fill="#2b3e36" stroke="#00c2a8" stroke-width="3"/>
+  <text x="240" y="310" fill="#f6f8f7" font-size="28" font-family="monospace">DC IN</text>
+  <rect x="480" y="250" width="180" height="100" rx="12" fill="#2b3e36" stroke="#f9c80e" stroke-width="3"/>
+  <text x="530" y="310" fill="#f6f8f7" font-size="28" font-family="monospace">BMS</text>
+  <rect x="760" y="250" width="180" height="100" rx="12" fill="#2b3e36" stroke="#ff6f59" stroke-width="3"/>
+  <text x="795" y="310" fill="#f6f8f7" font-size="28" font-family="monospace">RELAY</text>
+  <path d="M380 300 L480 300" stroke="#00c2a8" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M660 300 L760 300" stroke="#f9c80e" stroke-width="4" marker-end="url(#arrow)"/>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#00c2a8"/></marker></defs>
+  <text x="300" y="530" fill="#f6f8f7" font-size="40" font-family="IBM Plex Mono, monospace">UPS SCHEMATIC</text>
+</svg>

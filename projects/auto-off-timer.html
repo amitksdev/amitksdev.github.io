@@ -1,27 +1,14 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Auto-Off Timer | FullyAutomatix</title>
-    <meta name="description" content="Auto-Off Timer project using a C005 timer IC, relay output, and capacitive power supply in a compact mains-connected build." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="project.css" />
-  </head>
-  <body>
-    <main class="project-shell">
-      <header class="topbar">
-        <a class="brand" href="../index.html">FullyAutomatix</a>
-        <a class="home-link" href="../index.html">Back to Home</a>
-      </header>
+---
+layout: project
+title: "Auto-Off Timer | FullyAutomatix"
+description: "Auto-Off Timer project using a C005 timer IC, relay output, and capacitive power supply in a compact mains-connected build."
+---
 
       <section class="hero">
         <p class="kicker">Project File</p>
         <h1>Auto-Off Timer</h1>
         <p class="lead">A compact mains-connected auto-off timer built around the C005 timer IC, a relay output stage, and a transformerless capacitive power supply — no bulky adapters required.</p>
-        <img class="hero-image" src="../images/projects/auto-off-timer.svg" alt="Auto-Off Timer synthetic project render" />
+        <img class="hero-image" src="{{ '/images/projects/auto-off-timer.svg' | relative_url }}" alt="Auto-Off Timer synthetic project render" />
       </section>
 
       <section class="grid">
@@ -53,12 +40,9 @@
       <section class="card gallery">
         <h2>Project Images</h2>
         <div class="gallery-row">
-          <img src="../images/projects/timer-schematic.svg" alt="Auto-Off Timer block schematic showing mains, cap dropper, C005 and relay" />
-          <img src="../images/projects/timer-pcb.svg" alt="Auto-Off Timer compact single-layer PCB layout" />
+          <img src="{{ '/images/projects/timer-schematic.svg' | relative_url }}" alt="Auto-Off Timer block schematic showing mains, cap dropper, C005 and relay" />
+          <img src="{{ '/images/projects/timer-pcb.svg' | relative_url }}" alt="Auto-Off Timer compact single-layer PCB layout" />
         </div>
       </section>
 
       <p class="footer-note">Synthetic documentation by FullyAutomatix for concept demonstration.</p>
-    </main>
-  </body>
-</html>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="t d">
+  <title id="t">Load Tester PCB</title>
+  <desc id="d">PCB layout with power stage and control circuitry</desc>
+  <rect width="1200" height="620" fill="#111a17"/>
+  <rect x="120" y="70" width="960" height="480" rx="24" fill="#1d2a26" stroke="#46685a" stroke-width="4"/>
+  <rect x="200" y="140" width="800" height="360" rx="16" fill="#2b3e36" stroke="#3f5a4c" stroke-width="3"/>
+  <rect x="280" y="200" width="200" height="140" rx="12" fill="#1a2822" stroke="#f9c80e" stroke-width="3"/>
+  <text x="315" y="280" fill="#f6f8f7" font-size="26" font-family="monospace">POWER</text>
+  <text x="310" y="310" fill="#f6f8f7" font-size="26" font-family="monospace">MOSFET</text>
+  <rect x="560" y="200" width="180" height="140" rx="12" fill="#1a2822" stroke="#00c2a8" stroke-width="2"/>
+  <text x="590" y="260" fill="#f6f8f7" font-size="24" font-family="monospace">ARDUINO</text>
+  <text x="605" y="290" fill="#f6f8f7" font-size="24" font-family="monospace">NANO</text>
+  <rect x="800" y="200" width="140" height="80" rx="8" fill="#1a2822" stroke="#ff6f59" stroke-width="2"/>
+  <text x="835" y="250" fill="#f6f8f7" font-size="22" font-family="monospace">OLED</text>
+  <rect x="330" y="380" width="100" height="60" rx="6" fill="#0f1512" stroke="#00c2a8" stroke-width="2"/>
+  <text x="355" y="418" fill="#f6f8f7" font-size="18" font-family="monospace">0.1Ω</text>
+  <text x="280" y="530" fill="#f6f8f7" font-size="38" font-family="IBM Plex Mono, monospace">LOAD TESTER PCB</text>
+</svg>

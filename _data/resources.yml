@@ -1,0 +1,23 @@
+- name: GreatScott!
+  url: https://www.youtube.com/@GreatScottLab
+  description: Practical electronics explanations, test equipment usage, and clear project walk-throughs.
+
+- name: Andreas Spiess
+  url: https://www.youtube.com/@AndreasSpiess
+  description: Deep dives into ESP boards, sensors, power strategies, and home automation integrations.
+
+- name: DroneBot Workshop
+  url: https://www.youtube.com/@Dronebotworkshop
+  description: Breadboard-to-firmware tutorials that are ideal for hobby prototyping and learning-by-doing.
+
+- name: Adafruit Learning System
+  url: https://learn.adafruit.com
+  description: Structured project guides, code examples, and troubleshooting notes for all skill levels.
+
+- name: SparkFun Blog
+  url: https://www.sparkfun.com/news
+  description: Build ideas, product teardowns, and approachable tutorials for sensors, comms, and embedded gadgets.
+
+- name: Hackaday
+  url: https://hackaday.com
+  description: Daily inspiration from creative hardware hacks, reverse engineering, and custom fabrication.

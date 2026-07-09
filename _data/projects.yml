@@ -1,0 +1,20 @@
+- title: Electronic Load Tester
+  url: /projects/electronic-load-tester.html
+  description: >-
+    MOSFET and Op-Amp constant-current sink for battery capacity testing and power supply
+    load regulation, with OLED readout and over-temperature protection.
+  meta: "Op-Amp • MOSFET • Arduino Nano • Analog Design"
+
+- title: 12V UPS
+  url: /projects/12v-ups.html
+  description: >-
+    Bench-top uninterruptible power supply using a Li-Ion 3S2P cell pack with
+    active current limiting, BMS protection, and sub-20 ms automatic switchover.
+  meta: "Li-Ion • BMS • Current Limiting • Power Electronics"
+
+- title: Auto-Off Timer
+  url: /projects/auto-off-timer.html
+  description: >-
+    Mains-connected auto-off timer using a C005 timer IC, relay output, and a
+    transformerless capacitive power supply on a compact single-layer PCB.
+  meta: "C005 Timer • Relay • Capacitive PSU • Mains"

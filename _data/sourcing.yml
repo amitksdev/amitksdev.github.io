@@ -1,0 +1,19 @@
+- name: DigiKey
+  url: https://www.digikey.com
+  description: Excellent stock depth, fast shipping, and strong parametric search for exact components.
+
+- name: Mouser
+  url: https://www.mouser.com
+  description: Great for broad manufacturer coverage, datasheet access, and engineering-grade parts.
+
+- name: LCSC
+  url: https://www.lcsc.com
+  description: Very cost-effective for hobby and small-batch builds with wide module and component variety.
+
+- name: Adafruit
+  url: https://www.adafruit.com
+  description: Best for beginner-friendly breakout boards, clear documentation, and reliable tutorials.
+
+- name: SparkFun
+  url: https://www.sparkfun.com
+  description: Strong prototyping ecosystem with useful dev boards, shields, and educational resources.

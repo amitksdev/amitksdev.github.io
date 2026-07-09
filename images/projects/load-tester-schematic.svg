@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="t d">
+  <title id="t">Load Tester Schematic</title>
+  <desc id="d">Schematic showing op-amp control loop and MOSFET sink</desc>
+  <rect width="1200" height="620" fill="#111a17"/>
+  <rect x="120" y="70" width="960" height="480" rx="24" fill="#1d2a26" stroke="#46685a" stroke-width="4"/>
+  <rect x="200" y="220" width="180" height="140" rx="12" fill="#2b3e36" stroke="#00c2a8" stroke-width="3"/>
+  <text x="235" y="300" fill="#f6f8f7" font-size="28" font-family="monospace">OP-AMP</text>
+  <rect x="500" y="220" width="180" height="140" rx="12" fill="#2b3e36" stroke="#f9c80e" stroke-width="3"/>
+  <text x="540" y="300" fill="#f6f8f7" font-size="28" font-family="monospace">MOSFET</text>
+  <rect x="800" y="220" width="180" height="140" rx="12" fill="#2b3e36" stroke="#ff6f59" stroke-width="3"/>
+  <text x="830" y="285" fill="#f6f8f7" font-size="24" font-family="monospace">CURRENT</text>
+  <text x="845" y="315" fill="#f6f8f7" font-size="24" font-family="monospace">SENSE</text>
+  <path d="M380 290 L500 290" stroke="#00c2a8" stroke-width="4"/>
+  <path d="M680 290 L800 290" stroke="#f9c80e" stroke-width="4"/>
+  <path d="M800 360 Q 600 480 380 360 L290 360" stroke="#ff6f59" stroke-width="3" fill="none" stroke-dasharray="8,4"/>
+  <text x="250" y="530" fill="#f6f8f7" font-size="38" font-family="IBM Plex Mono, monospace">LOAD TESTER SCHEMATIC</text>
+</svg>

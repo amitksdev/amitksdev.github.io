@@ -1,201 +1,83 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FullyAutomatix | Hobby Electronics</title>
-    <meta
-      name="description"
-      content="FullyAutomatix is a hobby electronics and 3D printing playground with projects, tutorials, and build logs for makers."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="bg-grid" aria-hidden="true"></div>
+---
+layout: default
+title: "FullyAutomatix | Hobby Electronics"
+description: >-
+  FullyAutomatix is a hobby electronics and 3D printing playground with projects,
+  tutorials, and build logs for makers.
+---
 
-    <header class="site-header">
-      <a class="logo" href="#top" aria-label="FullyAutomatix home">
-        <span class="logo-mark">FA</span>
-        <span class="logo-text">FullyAutomatix</span>
-      </a>
+<main id="top">
+  <section class="hero reveal">
+    <p class="kicker">Hobby Electronics Lab</p>
+    <h1>
+      Build wild circuits.<br />
+      Learn by soldering.
+    </h1>
+    <p class="hero-copy">
+      FullyAutomatix is a maker site dedicated to practical electronics projects,
+      microcontroller experiments, and 3D-printed enclosures for complete home
+      automation systems and custom gadget builds.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#projects">Explore Projects</a>
+    </div>
 
-      <nav class="main-nav" aria-label="Primary navigation">
-        <a href="#projects">Projects</a>
-        <a href="#fabrication">3D + Automation</a>
-        <a href="#resources">Resources</a>
-        <a href="#sourcing">Sourcing</a>
-      </nav>
-    </header>
+    <div class="signal-strip" aria-label="Activity lights">
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </section>
 
-    <main id="top">
-      <section class="hero reveal">
-        <p class="kicker">Hobby Electronics Lab</p>
-        <h1>
-          Build wild circuits.<br />
-          Learn by soldering.
-        </h1>
-        <p class="hero-copy">
-          FullyAutomatix is a maker site dedicated to practical electronics projects,
-          microcontroller experiments, and 3D-printed enclosures for complete home
-          automation systems and custom gadget builds.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">Explore Projects</a>
-        </div>
+  <section id="projects" class="section reveal">
+    <div class="section-head">
+      <p class="kicker">Featured Projects</p>
+      <h2>Builds You Can Finish This Weekend</h2>
+    </div>
+    <div class="card-grid">
+      {% for project in site.data.projects %}
+      <article class="project-card">
+        <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+        <p>{{ project.description }}</p>
+        <p class="meta">{{ project.meta }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
 
-        <div class="signal-strip" aria-label="Activity lights">
-          <span></span><span></span><span></span><span></span><span></span><span></span>
-        </div>
-      </section>
+  <section id="resources" class="section join reveal">
+    <div>
+      <p class="kicker">Resources</p>
+      <h2>YouTube Channels and Blogs That Inspire Builds</h2>
+      <p>
+        A running list of creators, educators, and blogs that have shaped many of these hobby
+        electronics and 3D-printing automation ideas.
+      </p>
+    </div>
+    <ul class="kit-list" aria-label="Learning resources for electronics inspiration">
+      {% for item in site.data.resources %}
+      <li>
+        <strong><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a>:</strong>
+        {{ item.description }}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
 
-      <section id="projects" class="section reveal">
-        <div class="section-head">
-          <p class="kicker">Featured Projects</p>
-          <h2>Builds You Can Finish This Weekend</h2>
-        </div>
-        <div class="card-grid">
-          <article class="project-card">
-            <h3><a href="projects/electronic-load-tester.html">Electronic Load Tester</a></h3>
-            <p>
-              MOSFET and Op-Amp constant-current sink for battery capacity testing and power supply
-              load regulation, with OLED readout and over-temperature protection.
-            </p>
-            <p class="meta">Op-Amp • MOSFET • Arduino Nano • Analog Design</p>
-          </article>
-          <article class="project-card">
-            <h3><a href="projects/desk-signal-tower.html">12V UPS</a></h3>
-            <p>
-              Bench-top uninterruptible power supply using a Li-Ion 3S2P cell pack with
-              active current limiting, BMS protection, and sub-20 ms automatic switchover.
-            </p>
-            <p class="meta">Li-Ion • BMS • Current Limiting • Power Electronics</p>
-          </article>
-          <article class="project-card">
-            <h3><a href="projects/retro-vu-meter.html">Auto-Off Timer</a></h3>
-            <p>
-              Mains-connected auto-off timer using a C005 timer IC, relay output, and a
-              transformerless capacitive power supply on a compact single-layer PCB.
-            </p>
-            <p class="meta">C005 Timer • Relay • Capacitive PSU • Mains</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="resources" class="section join reveal">
-        <div>
-          <p class="kicker">Resources</p>
-          <h2>YouTube Channels and Blogs That Inspire Builds</h2>
-          <p>
-            A running list of creators, educators, and blogs that have shaped many of these hobby
-            electronics and 3D-printing automation ideas.
-          </p>
-        </div>
-        <ul class="kit-list" aria-label="Learning resources for electronics inspiration">
-          <li>
-            <strong><a href="https://www.youtube.com/@GreatScottLab" target="_blank" rel="noopener noreferrer">GreatScott!</a>:</strong>
-            Practical electronics explanations, test equipment usage, and clear project walk-throughs.
-          </li>
-          <li>
-            <strong><a href="https://www.youtube.com/@AndreasSpiess" target="_blank" rel="noopener noreferrer">Andreas Spiess</a>:</strong>
-            Deep dives into ESP boards, sensors, power strategies, and home automation integrations.
-          </li>
-          <li>
-            <strong><a href="https://www.youtube.com/@Dronebotworkshop" target="_blank" rel="noopener noreferrer">DroneBot Workshop</a>:</strong>
-            Breadboard-to-firmware tutorials that are ideal for hobby prototyping and learning-by-doing.
-          </li>
-          <li>
-            <strong><a href="https://learn.adafruit.com" target="_blank" rel="noopener noreferrer">Adafruit Learning System</a>:</strong>
-            Structured project guides, code examples, and troubleshooting notes for all skill levels.
-          </li>
-          <li>
-            <strong><a href="https://www.sparkfun.com/news" target="_blank" rel="noopener noreferrer">SparkFun Blog</a>:</strong>
-            Build ideas, product teardowns, and approachable tutorials for sensors, comms, and embedded gadgets.
-          </li>
-          <li>
-            <strong><a href="https://hackaday.com" target="_blank" rel="noopener noreferrer">Hackaday</a>:</strong>
-            Daily inspiration from creative hardware hacks, reverse engineering, and custom fabrication.
-          </li>
-        </ul>
-      </section>
-
-      <section id="fabrication" class="section reveal">
-        <div class="section-head">
-          <p class="kicker">3D Printing + Electronics</p>
-          <h2>Complete Home Automation and Gadget Builds</h2>
-        </div>
-        <div class="card-grid">
-          <article class="project-card">
-            <h3><a href="projects/smart-room-node-stack.html">Smart Room Node Stack</a></h3>
-            <p>
-              Combine temperature, motion, and air-quality sensors with an ESP32 board in a multi-part
-              3D-printed wall mount for a clean home automation install.
-            </p>
-            <p class="meta">Home Assistant • ESP32 • Multi-Part Print</p>
-          </article>
-          <article class="project-card">
-            <h3><a href="projects/modular-gadget-enclosures.html">Modular Gadget Enclosures</a></h3>
-            <p>
-              Reusable enclosure templates with screw posts, cable channels, and vent patterns sized for
-              common hobby PCBs so each gadget build looks production-ready.
-            </p>
-            <p class="meta">Fusion/FreeCAD • STL • PCB Fit Guides</p>
-          </article>
-          <article class="project-card">
-            <h3><a href="projects/automation-dock-ecosystem.html">Automation Dock Ecosystem</a></h3>
-            <p>
-              Build a printed dock system for smart switches, relay controllers, and sensor hubs so you can
-              scale from one room to a full-house automation setup.
-            </p>
-            <p class="meta">Relays • Power Rails • Quick-Swap Modules</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="sourcing" class="section join reveal">
-        <div>
-          <p class="kicker">Component Sourcing</p>
-          <h2>Where to Buy Electronics Parts</h2>
-          <p>
-            Use this section to keep your go-to vendors for sensors, passives, modules, connectors,
-            and prototyping hardware. These links are easy to swap with your preferred sources.
-          </p>
-        </div>
-        <ul class="kit-list" aria-label="Top electronics component vendors">
-          <li>
-            <strong><a href="https://www.digikey.com" target="_blank" rel="noopener noreferrer">DigiKey</a>:</strong>
-            Excellent stock depth, fast shipping, and strong parametric search for exact components.
-          </li>
-          <li>
-            <strong><a href="https://www.mouser.com" target="_blank" rel="noopener noreferrer">Mouser</a>:</strong>
-            Great for broad manufacturer coverage, datasheet access, and engineering-grade parts.
-          </li>
-          <li>
-            <strong><a href="https://www.lcsc.com" target="_blank" rel="noopener noreferrer">LCSC</a>:</strong>
-            Very cost-effective for hobby and small-batch builds with wide module and component variety.
-          </li>
-          <li>
-            <strong><a href="https://www.adafruit.com" target="_blank" rel="noopener noreferrer">Adafruit</a>:</strong>
-            Best for beginner-friendly breakout boards, clear documentation, and reliable tutorials.
-          </li>
-          <li>
-            <strong><a href="https://www.sparkfun.com" target="_blank" rel="noopener noreferrer">SparkFun</a>:</strong>
-            Strong prototyping ecosystem with useful dev boards, shields, and educational resources.
-          </li>
-        </ul>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <p>FullyAutomatix</p>
-      <p><span id="year"></span> • Hobby Electronics Community</p>
-    </footer>
-
-    <script src="app.js"></script>
-  </body>
-</html>
+  <section id="sourcing" class="section join reveal">
+    <div>
+      <p class="kicker">Component Sourcing</p>
+      <h2>Where to Buy Electronics Parts</h2>
+      <p>
+        Use this section to keep your go-to vendors for sensors, passives, modules, connectors,
+        and prototyping hardware. These links are easy to swap with your preferred sources.
+      </p>
+    </div>
+    <ul class="kit-list" aria-label="Top electronics component vendors">
+      {% for item in site.data.sourcing %}
+      <li>
+        <strong><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a>:</strong>
+        {{ item.description }}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+</main>

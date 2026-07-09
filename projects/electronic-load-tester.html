@@ -1,0 +1,50 @@
+---
+layout: project
+title: "Electronic Load Tester | FullyAutomatix"
+description: "Electronic Load Tester project featuring MOSFET and Op-Amp constant-current sink for battery capacity testing and power supply load regulation."
+---
+
+      <section class="hero">
+        <p class="kicker">Project File</p>
+        <h1>Electronic Load Tester</h1>
+        <p class="lead">A MOSFET and Op-Amp constant-current sink for battery capacity testing and power supply load regulation, with OLED readout and over-temperature protection.</p>
+        <img class="hero-image" src="{{ '/images/projects/electronic-load-tester.svg' | relative_url }}" alt="Electronic Load Tester synthetic project render" />
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h2>Build Summary</h2>
+          <p>This electronic load tester uses a precision op-amp control loop to drive a power MOSFET as a programmable constant-current sink. Perfect for battery discharge testing, power supply stability checks, and measuring actual capacity under realistic load conditions.</p>
+          <ul>
+            <li>Op-amp feedback loop maintains constant current through MOSFET</li>
+            <li>Precision current sense resistor (0.1Ω / 5W) for accurate measurement</li>
+            <li>Adjustable load current from 0.1A to 5A via rotary encoder</li>
+            <li>OLED display shows real-time voltage, current, power, and mAh discharged</li>
+            <li>Over-temperature shutdown using NTC thermistor on MOSFET heatsink</li>
+            <li>Arduino Nano for control, measurement, and data logging to SD card</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Technical Specs</h2>
+          <table class="specs">
+            <tr><th>Load Current</th><td>0.1 A – 5 A (adjustable)</td></tr>
+            <tr><th>Input Voltage</th><td>3 V – 30 V DC</td></tr>
+            <tr><th>Power MOSFET</th><td>IRFZ44N (55V / 49A) with heatsink</td></tr>
+            <tr><th>Op-Amp</th><td>LM358 or TL072 dual op-amp</td></tr>
+            <tr><th>Current Accuracy</th><td>±50 mA (with calibration)</td></tr>
+            <tr><th>Display</th><td>0.96" OLED 128x64 I2C</td></tr>
+            <tr><th>Data Logging</th><td>MicroSD card via SPI</td></tr>
+            <tr><th>Target Cost</th><td>USD 22 synthetic BOM</td></tr>
+          </table>
+        </article>
+      </section>
+
+      <section class="card gallery">
+        <h2>Project Images</h2>
+        <div class="gallery-row">
+          <img src="{{ '/images/projects/load-tester-schematic.svg' | relative_url }}" alt="Electronic Load Tester schematic showing op-amp control loop and MOSFET sink" />
+          <img src="{{ '/images/projects/load-tester-pcb.svg' | relative_url }}" alt="Electronic Load Tester PCB layout with power stage and control circuitry" />
+        </div>
+      </section>
+
+      <p class="footer-note">Synthetic documentation by FullyAutomatix for concept demonstration.</p>

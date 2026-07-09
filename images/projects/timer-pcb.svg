@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="t d">
+  <title id="t">Auto-Off Timer PCB</title>
+  <desc id="d">Compact single-layer PCB layout</desc>
+  <rect width="1200" height="620" fill="#111a17"/>
+  <rect x="120" y="70" width="960" height="480" rx="24" fill="#1d2a26" stroke="#46685a" stroke-width="4"/>
+  <rect x="300" y="160" width="600" height="320" rx="16" fill="#2b3e36" stroke="#3f5a4c" stroke-width="3"/>
+  <rect x="360" y="220" width="140" height="80" rx="8" fill="#1a2822" stroke="#f9c80e" stroke-width="2"/>
+  <text x="395" y="270" fill="#f6f8f7" font-size="22" font-family="monospace">C005</text>
+  <rect x="550" y="220" width="120" height="80" rx="8" fill="#1a2822" stroke="#ff6f59" stroke-width="2"/>
+  <text x="570" y="270" fill="#f6f8f7" font-size="22" font-family="monospace">RELAY</text>
+  <rect x="720" y="220" width="120" height="80" rx="8" fill="#1a2822" stroke="#00c2a8" stroke-width="2"/>
+  <text x="740" y="270" fill="#f6f8f7" font-size="22" font-family="monospace">ZENER</text>
+  <circle cx="430" cy="380" r="18" fill="#f9c80e"/>
+  <circle cx="590" cy="380" r="18" fill="#00c2a8"/>
+  <circle cx="750" cy="380" r="18" fill="#ff6f59"/>
+  <text x="390" y="530" fill="#f6f8f7" font-size="40" font-family="IBM Plex Mono, monospace">TIMER PCB</text>
+</svg>

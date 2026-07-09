@@ -1,27 +1,14 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>12V UPS | FullyAutomatix</title>
-    <meta name="description" content="12V UPS project page featuring Li-Ion battery pack with current limiting and BMS protection." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="project.css" />
-  </head>
-  <body>
-    <main class="project-shell">
-      <header class="topbar">
-        <a class="brand" href="../index.html">FullyAutomatix</a>
-        <a class="home-link" href="../index.html">Back to Home</a>
-      </header>
+---
+layout: project
+title: "12V UPS | FullyAutomatix"
+description: "12V UPS project page featuring Li-Ion battery pack with current limiting and BMS protection."
+---
 
       <section class="hero">
         <p class="kicker">Project File</p>
         <h1>12V UPS</h1>
         <p class="lead">A bench-top 12 V uninterruptible power supply built around a Li-Ion cell pack with active current limiting and a dedicated BMS for safe charge, discharge, and over-current protection.</p>
-        <img class="hero-image" src="../images/projects/12v-ups.svg" alt="12V UPS synthetic project render" />
+        <img class="hero-image" src="{{ '/images/projects/12v-ups.svg' | relative_url }}" alt="12V UPS synthetic project render" />
       </section>
 
       <section class="grid">
@@ -53,12 +40,9 @@
       <section class="card gallery">
         <h2>Project Images</h2>
         <div class="gallery-row">
-          <img src="../images/projects/ups-schematic.svg" alt="12V UPS block schematic showing charge path, BMS and relay switchover" />
-          <img src="../images/projects/ups-pcb.svg" alt="12V UPS PCB layout with 18650 cell holders, BMS IC and relay" />
+          <img src="{{ '/images/projects/ups-schematic.svg' | relative_url }}" alt="12V UPS block schematic showing charge path, BMS and relay switchover" />
+          <img src="{{ '/images/projects/ups-pcb.svg' | relative_url }}" alt="12V UPS PCB layout with 18650 cell holders, BMS IC and relay" />
         </div>
       </section>
 
       <p class="footer-note">Synthetic documentation by FullyAutomatix for concept demonstration.</p>
-    </main>
-  </body>
-</html>

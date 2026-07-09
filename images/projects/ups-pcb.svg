@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="t d">
+  <title id="t">12V UPS PCB Layout</title>
+  <desc id="d">PCB layout with 18650 cell holders, BMS IC and relay</desc>
+  <rect width="1200" height="620" fill="#111a17"/>
+  <rect x="120" y="70" width="960" height="480" rx="24" fill="#1d2a26" stroke="#46685a" stroke-width="4"/>
+  <rect x="200" y="140" width="800" height="360" rx="16" fill="#2b3e36" stroke="#3f5a4c" stroke-width="3"/>
+  <circle cx="350" cy="250" r="50" fill="#0f1512" stroke="#f9c80e" stroke-width="3"/>
+  <circle cx="500" cy="250" r="50" fill="#0f1512" stroke="#f9c80e" stroke-width="3"/>
+  <circle cx="650" cy="250" r="50" fill="#0f1512" stroke="#f9c80e" stroke-width="3"/>
+  <rect x="750" y="200" width="180" height="100" rx="8" fill="#1a2822" stroke="#00c2a8" stroke-width="2"/>
+  <text x="785" y="260" fill="#f6f8f7" font-size="24" font-family="monospace">BMS IC</text>
+  <rect x="350" y="380" width="120" height="80" rx="8" fill="#1a2822" stroke="#ff6f59" stroke-width="2"/>
+  <text x="375" y="430" fill="#f6f8f7" font-size="22" font-family="monospace">RELAY</text>
+  <text x="380" y="530" fill="#f6f8f7" font-size="40" font-family="IBM Plex Mono, monospace">UPS PCB</text>
+</svg>
