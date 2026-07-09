@@ -379,39 +379,6 @@ h1 {
     rgba(255, 255, 255, 0.03);
 }
 
-.join-form {
-  display: grid;
-  gap: 0.55rem;
-}
-
-.join-form label {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.82rem;
-  color: var(--text-dim);
-}
-
-.join-form input {
-  width: 100%;
-  border-radius: 10px;
-  border: 1px solid var(--line);
-  background: #0f1512;
-  color: var(--text);
-  padding: 0.7rem 0.75rem;
-  font: inherit;
-}
-
-.join-form input:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-}
-
-.form-note {
-  min-height: 1.3rem;
-  margin: 0;
-  font-size: 0.85rem;
-  color: var(--accent-2);
-}
-
 .site-footer {
   border-top: 1px solid var(--line);
   margin-bottom: 2rem;

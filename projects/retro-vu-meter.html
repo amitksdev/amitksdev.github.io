@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Retro VU Meter | FullyAutomatix</title>
-    <meta name="description" content="Retro VU Meter build guide with synthetic details and image gallery." />
+    <title>Auto-Off Timer | FullyAutomatix</title>
+    <meta name="description" content="Auto-Off Timer project using a C005 timer IC, relay output, and capacitive power supply in a compact mains-connected build." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -19,30 +19,33 @@
 
       <section class="hero">
         <p class="kicker">Project File</p>
-        <h1>Retro VU Meter</h1>
-        <p class="lead">A stereo line-level visualizer with analog front-end gain staging and a custom printed faceplate for classic instrument aesthetics.</p>
-        <img class="hero-image" src="../images/projects/retro-vu-meter.svg" alt="Retro VU Meter synthetic project render" />
+        <h1>Auto-Off Timer</h1>
+        <p class="lead">A compact mains-connected auto-off timer built around the C005 timer IC, a relay output stage, and a transformerless capacitive power supply — no bulky adapters required.</p>
+        <img class="hero-image" src="../images/projects/auto-off-timer.svg" alt="Auto-Off Timer synthetic project render" />
       </section>
 
       <section class="grid">
         <article class="card">
           <h2>Build Summary</h2>
-          <p>This synthetic design uses dual channels with adjustable attack and decay constants for expressive needle response.</p>
+          <p>The timer counts down a user-set period and switches off the load via a relay. The entire circuit runs from a capacitive dropper supply directly off mains, keeping the footprint to a single compact PCB.</p>
           <ul>
-            <li>Dual op-amp preamp with trim calibration points</li>
-            <li>Selectable line-in sensitivity profile switch</li>
-            <li>Printed front bezel and knob caps in matte PETG</li>
-            <li>Backlight control for studio and low-light desk use</li>
+            <li>C005 timer IC driving a single-pole relay for load switching</li>
+            <li>Capacitive power supply (X-rated cap dropper) — no transformer</li>
+            <li>Onboard Zener regulation for stable 5 V logic rail</li>
+            <li>Preset resistor network for fixed time intervals (15 / 30 / 60 min)</li>
+            <li>LED indicator shows active countdown state</li>
+            <li>Compact single-layer PCB fits a standard wall-plate enclosure</li>
           </ul>
         </article>
         <article class="card">
           <h2>Technical Specs</h2>
           <table class="specs">
-            <tr><th>Input</th><td>3.5mm stereo line-in</td></tr>
-            <tr><th>Supply</th><td>9V DC center-positive</td></tr>
-            <tr><th>Display</th><td>Dual analog needles + LED backlight</td></tr>
-            <tr><th>Print Time</th><td>5h 20m faceplate and housing</td></tr>
-            <tr><th>Target Cost</th><td>USD 42 synthetic BOM</td></tr>
+            <tr><th>Timer IC</th><td>C005 (or equivalent NE555 variant)</td></tr>
+            <tr><th>Power Supply</th><td>Capacitive dropper, 230 V AC in</td></tr>
+            <tr><th>Logic Rail</th><td>5 V DC via Zener regulator</td></tr>
+            <tr><th>Relay Output</th><td>5 V coil, 10 A / 250 V AC contacts</td></tr>
+            <tr><th>Time Ranges</th><td>15 min, 30 min, 60 min (preset)</td></tr>
+            <tr><th>Target Cost</th><td>USD 6 synthetic BOM</td></tr>
           </table>
         </article>
       </section>
@@ -50,8 +53,8 @@
       <section class="card gallery">
         <h2>Project Images</h2>
         <div class="gallery-row">
-          <img src="../images/projects/wiring-diagram.svg" alt="Synthetic wiring diagram for Retro VU Meter" />
-          <img src="../images/projects/print-layout.svg" alt="Synthetic print layout for Retro VU Meter housing" />
+          <img src="../images/projects/timer-schematic.svg" alt="Auto-Off Timer block schematic showing mains, cap dropper, C005 and relay" />
+          <img src="../images/projects/timer-pcb.svg" alt="Auto-Off Timer compact single-layer PCB layout" />
         </div>
       </section>
 

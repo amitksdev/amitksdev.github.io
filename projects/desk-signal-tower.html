@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Desk Signal Tower | FullyAutomatix</title>
-    <meta name="description" content="Desk Signal Tower project page with synthetic build data and image gallery." />
+    <title>12V UPS | FullyAutomatix</title>
+    <meta name="description" content="12V UPS project page featuring Li-Ion battery pack with current limiting and BMS protection." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -19,30 +19,33 @@
 
       <section class="hero">
         <p class="kicker">Project File</p>
-        <h1>Desk Signal Tower</h1>
-        <p class="lead">A compact desktop status beacon with tactile mode switching and a snap-fit printed tower body for coding, streaming, or focus sessions.</p>
-        <img class="hero-image" src="../images/projects/desk-signal-tower.svg" alt="Desk Signal Tower synthetic project render" />
+        <h1>12V UPS</h1>
+        <p class="lead">A bench-top 12 V uninterruptible power supply built around a Li-Ion cell pack with active current limiting and a dedicated BMS for safe charge, discharge, and over-current protection.</p>
+        <img class="hero-image" src="../images/projects/12v-ups.svg" alt="12V UPS synthetic project render" />
       </section>
 
       <section class="grid">
         <article class="card">
           <h2>Build Summary</h2>
-          <p>The tower supports USB-C power and can map signal states to calendar events using a lightweight serial bridge.</p>
+          <p>The UPS sits inline between a 12 V DC supply and a load, seamlessly switching to battery when mains power is interrupted. A hardware current-limit stage protects both the cells and the load during heavy transients.</p>
           <ul>
-            <li>Triple high-brightness diffused LEDs for visual clarity</li>
-            <li>Single-button short-press and long-press mode system</li>
-            <li>Printed lens diffuser stack with quarter-turn lock</li>
-            <li>Optional buzzer alert profile for timer events</li>
+            <li>Li-Ion cell pack (3S configuration, 11.1 V nominal) with spot-welded nickel strips</li>
+            <li>Dedicated BMS IC for over-charge, over-discharge, over-current, and short-circuit cut-off</li>
+            <li>Adjustable current-limiting circuit using an op-amp sense resistor loop</li>
+            <li>Automatic switchover relay with sub-20 ms transfer time</li>
+            <li>LED fuel gauge and fault indicator on front panel</li>
           </ul>
         </article>
         <article class="card">
           <h2>Technical Specs</h2>
           <table class="specs">
-            <tr><th>Controller</th><td>ATtiny1616</td></tr>
-            <tr><th>Input</th><td>USB-C 5V, ESD-protected</td></tr>
-            <tr><th>Modes</th><td>Focus, Meeting, Break, Silent</td></tr>
-            <tr><th>Print Time</th><td>3h 45m for tower + base</td></tr>
-            <tr><th>Target Cost</th><td>USD 24 synthetic BOM</td></tr>
+            <tr><th>Output Voltage</th><td>12 V DC regulated</td></tr>
+            <tr><th>Battery Chemistry</th><td>Li-Ion 18650, 3S2P</td></tr>
+            <tr><th>BMS</th><td>DW01 / FS8205A cell protection</td></tr>
+            <tr><th>Current Limit</th><td>Adjustable 0.5 A – 3 A via trim-pot</td></tr>
+            <tr><th>Charge Input</th><td>DC barrel 14.4 V / 2 A CC-CV</td></tr>
+            <tr><th>Transfer Time</th><td>&lt; 20 ms on mains failure</td></tr>
+            <tr><th>Target Cost</th><td>USD 38 synthetic BOM</td></tr>
           </table>
         </article>
       </section>
@@ -50,8 +53,8 @@
       <section class="card gallery">
         <h2>Project Images</h2>
         <div class="gallery-row">
-          <img src="../images/projects/wiring-diagram.svg" alt="Synthetic wiring diagram for Desk Signal Tower" />
-          <img src="../images/projects/print-layout.svg" alt="Synthetic print layout for Desk Signal Tower chassis" />
+          <img src="../images/projects/ups-schematic.svg" alt="12V UPS block schematic showing charge path, BMS and relay switchover" />
+          <img src="../images/projects/ups-pcb.svg" alt="12V UPS PCB layout with 18650 cell holders, BMS IC and relay" />
         </div>
       </section>
 
