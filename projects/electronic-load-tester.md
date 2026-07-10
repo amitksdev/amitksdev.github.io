@@ -12,7 +12,7 @@ Project File
 {:.lead}
 A MOSFET and Op-Amp constant-current sink for battery capacity testing and power supply load regulation, with OLED readout and over-temperature protection.
 
-![Electronic Load Tester synthetic project render]({{ '/images/projects/electronic-load-tester.svg' | relative_url }}){:.hero-image}
+![Electronic Load Tester synthetic project render]({{ '/images/carousel/electronic-load-tester-1.jpg' | relative_url }}){:.hero-image}
 
 ## Build Summary
 

@@ -12,7 +12,7 @@ Project File
 {:.lead}
 A bench-top 12 V uninterruptible power supply built around a Li-Ion cell pack with active current limiting and a dedicated BMS for safe charge, discharge, and over-current protection.
 
-![12V UPS synthetic project render]({{ '/images/projects/12v-ups.svg' | relative_url }}){:.hero-image}
+![12V UPS synthetic project render]({{ '/images/carousel/12v-ups.jpg' | relative_url }}){:.hero-image}
 
 ## Build Summary
 

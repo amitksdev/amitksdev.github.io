@@ -12,7 +12,7 @@ Project File
 {:.lead}
 A compact mains-connected auto-off timer built around the C005 timer IC, a relay output stage, and a transformerless capacitive power supply — no bulky adapters required.
 
-![Auto-Off Timer synthetic project render]({{ '/images/projects/auto-off-timer.svg' | relative_url }}){:.hero-image}
+![Auto-Off Timer synthetic project render]({{ '/images/carousel/auto-off-timer.jpg' | relative_url }}){:.hero-image}
 
 ## Build Summary
 
