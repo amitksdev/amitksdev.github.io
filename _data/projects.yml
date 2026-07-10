@@ -6,6 +6,16 @@
     load regulation, with OLED readout and over-temperature protection.
   meta: "Op-Amp • MOSFET • Arduino Nano • Analog Design"
 
+
+- title: Mini Wireless Repeater
+  url: /projects/mini-wireless-repeater.html
+  image: /images/carousel/mini-wireless-repeater-1.jpg
+  description: >-
+    ESP8266-based WiFi range extender with external antenna mod for enhanced coverage.
+    Built with the Wemos D1 Mini for compact, affordable network extension.
+  meta: "ESP8266 • WiFi • External Antenna • IoT"
+
+
 - title: 12V UPS
   url: /projects/12v-ups.html
   image: /images/carousel/12v-ups.jpg
