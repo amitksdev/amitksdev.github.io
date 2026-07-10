@@ -1,5 +1,6 @@
 - title: Electronic Load Tester
   url: /projects/electronic-load-tester.html
+  image: /images/carousel/electronic-load-tester-1.jpg
   description: >-
     MOSFET and Op-Amp constant-current sink for battery capacity testing and power supply
     load regulation, with OLED readout and over-temperature protection.
@@ -7,6 +8,7 @@
 
 - title: 12V UPS
   url: /projects/12v-ups.html
+  image: /images/carousel/12v-ups.jpg
   description: >-
     Bench-top uninterruptible power supply using a Li-Ion 3S2P cell pack with
     active current limiting, BMS protection, and sub-20 ms automatic switchover.
@@ -14,6 +16,7 @@
 
 - title: Auto-Off Timer
   url: /projects/auto-off-timer.html
+  image: /images/carousel/auto-off-timer.jpg
   description: >-
     Mains-connected auto-off timer using a C005 timer IC, relay output, and a
     transformerless capacitive power supply on a compact single-layer PCB.
